@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CONCURSO - POLÍCIA CIVIL DO ESTADO DO PARÁ (PCPA)</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; width: 100%; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      width: 100%;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .titlebar h1 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+      justify-content: stretch;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      width: 100vw;
+      height: calc(100vh - 50px);
+      gap: 5px;
+    }
+
+    .tile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tile button {
+      width: 90%;
+      height: 90%;
+      font-size: 1rem;
+      background: #222;
+      color: #fff;
+      border: 3px solid #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .tile button:hover {
+      background: #555;
+    }
+
+    /* Cores diferentes para os 3 últimos botões */
+    .gallery .tile:nth-last-child(1) button {
+      background: #e74c3c; /* vermelho */
+    }
+
+    .gallery .tile:nth-last-child(2) button {
+      background: #f1c40f; /* amarelo */
+      color: #000;
+    }
+
+    .gallery .tile:nth-last-child(3) button {
+      background: #2ecc71; /* verde */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="titlebar">
+      <h1>CONCURSO - POLÍCIA CIVIL DO ESTADO DO PARÁ (PCPA)</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="gallery">
+      <div class="tile"><button onclick="window.open('https://example.com/1','_blank')">Língua Portuguesa</button></div>
+      <div class="tile"><button onclick="window.open('https://example.com/2','_blank')">Raciocínio Lógico</button></div>
+      <div class="tile"><button onclick="window.open('https://example.com/3','_blank')">Informática</button></div>
+      <div class="tile"><button onclick="window.open('https://example.com/4','_blank')">Conhecimentos sobre o Estado do Pará</button></div>
+      <div class="tile"><button onclick="window.open('https://example.com/5','_blank')">Direito Administrativo</button></div>
+      <div class="tile"><button onclick="window.open('https://example.com/6','_blank')">Direito Constitucional</button></div>
+      <div class="tile"><button onclick="window.open('https://example.com/7','_blank')">Direito Penal</button></div>
+      <div class="tile"><button onclick="window.open('https://example.com/8','_blank')">Direito Processual Penal</button></div>
+      <div class="tile"><button onclick="window.open('https://example.com/9','_blank')">Legislação Especial</button></div>
+      <div class="tile"><button onclick="window.open('https://example.com/10','_blank')">Arquivologia</button></div>
+      <div class="tile"><button onclick="window.open('https://woozy-scorpio-cc5.notion.site/Estat-stica-20cab4d03a4c80de91ddf3ae8ce40ba6','_blank')">Estatística</button></div>
+      <div class="tile"><button onclick="window.open('https://woozy-scorpio-cc5.notion.site/Contabilidade-20cab4d03a4c8063be68f0d02a20b293','_blank')">Contabilidade</button></div>
+      <div class="tile"><button onclick="window.open('https://example.com/13','_blank')">REDAÇÃO</button></div>
+      <div class="tile"><button onclick="window.open('https://example.com/14','_blank')">SIMULADOS</button></div>
+      <div class="tile"><button onclick="window.open('https://example.com/15','_blank')">EDITAL</button></div>
+    </section>
+  </main>
+</body>
+</html>
